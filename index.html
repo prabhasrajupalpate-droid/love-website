@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For My Love ❤️</title>
+<style>
+body {
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  font-family: 'Courier New', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.heart {
+  position: relative;
+  width: 300px;
+  height: 270px;
+  transform: rotate(-45deg);
+  animation: beat 1s infinite;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 270px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart:before {
+  top: -150px;
+  left: 0;
+}
+
+.heart:after {
+  left: 150px;
+  top: 0;
+}
+
+.text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transform: rotate(45deg);
+  top: 110px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+@keyframes beat {
+  0% { transform: rotate(-45deg) scale(1); }
+  50% { transform: rotate(-45deg) scale(1.1); }
+  100% { transform: rotate(-45deg) scale(1); }
+}
+</style>
+</head>
+<body>
+
+<div class="heart">
+  <div class="text">
+    Bachuuu ❤️<br>
+    I Love You Forever
+  </div>
+</div>
+
+</body>
+</html>
